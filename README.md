@@ -5,4 +5,6 @@ This repository contains the code that was run on the Arduino that was sent up t
 
 Also included in the repository is the saved data that was collected. You can parse this data using the included parser.py program.
 
+More things will be added to this repo when I get around to it :P
+
 
