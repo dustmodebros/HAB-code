@@ -37,8 +37,10 @@ The flight computer software is developed using the Arduino system's modified C+
 
 ## Base Station
 
+After the flight computer transmitted its data, I used a Software Defined Radio (SDR) to decode the radio transmissions to keep track of the flight computer's GPS co-ordinates. The data flow was as follows:
 
-For recieving the transmitted data, we used a
+- Flight computer transmits 
+For recieving the transmitted data, we used a Yagi antenna, and a Yaesu FT 790-r Transciever to decode it
 For decoding the recieved data, we used [Fldigi](http://www.w1hkj.com/index.html). Fldigi is a 
 
 ## Images
