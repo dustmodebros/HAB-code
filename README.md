@@ -36,8 +36,9 @@ The flight computer software is developed using the Arduino system's modified C+
 
 ## Base Station
 
+
 For recieving the transmitted data, we used a
-For decoding the recieved data, we used [Fldigi](http://www.w1hkj.com/index.html). Fldigi is a SDR (Software Defined Radio) 
+For decoding the recieved data, we used [Fldigi](http://www.w1hkj.com/index.html). Fldigi is a 
 
 ## Images
 
