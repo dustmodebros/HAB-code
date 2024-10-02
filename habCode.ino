@@ -1,8 +1,6 @@
 #include <TinyGPSPlus.h>
 #include <SoftwareSerial.h>
-
 #include <Adafruit_MPL3115A2.h>
-
 #include <SPI.h>
 #include <SD.h>
 #include <Wire.h>
@@ -16,12 +14,13 @@ static const int RXPin = 3, TXPin = 4;
 static const uint32_t GPSBaud = 9600;
 
 char sz[32];
-
 File myFile;
 float initHeight;
+
+// The Barometer object
 Adafruit_MPL3115A2 baro = Adafruit_MPL3115A2();
 
-// The TinyGPSPlus object
+// The GPS object
 TinyGPSPlus gps;
 
 // The serial connection to the GPS device
@@ -31,21 +30,18 @@ void setup()
 {
   baro.begin();
   SD.begin(10);
-  Serial.begin(115200);
+  Serial.begin(115200); //
   ss.begin(GPSBaud);
- 
   initHeight = baro.getAltitude();
-
   Serial.println("new restart");
   myFile = SD.open("results.txt", FILE_WRITE);
   myFile.println("new restart");
   myFile.close();
-
 }
 
 void loop()
 {
- 
+  //need to reopen and close the file on each loop
   myFile = SD.open("results.txt", FILE_WRITE);
 
   printFloat(gps.location.lat(), gps.location.isValid(), 11, 6);
@@ -63,10 +59,9 @@ void loop()
   myFile.close();
 
   smartDelay(5000);
-
  
   if (millis() > 5000 && gps.charsProcessed() < 10)
-    Serial.println(F("No GPS data received: check wiring"));
+      Serial.println(F("No GPS data received: check wiring"));
 }
 
 // This custom version of delay() ensures that the gps object
@@ -101,11 +96,8 @@ static void printFloat(float val, bool valid, int len, int prec)
   smartDelay(0);
 }
 
-
 static void printDateTime(TinyGPSTime &t)
 {
-
- 
   if (!t.isValid())
   {
     Serial.print(F("******** "));
@@ -115,7 +107,6 @@ static void printDateTime(TinyGPSTime &t)
     sprintf(sz, "%02d:%02d:%02d ", t.hour() + 1, t.minute(), t.second());
     Serial.print(sz);
   }
-
   smartDelay(0);
 }
 
