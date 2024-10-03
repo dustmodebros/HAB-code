@@ -52,7 +52,6 @@ After the flight computer transmitted its data, I used a Software Defined Radio 
 
 ## Images
 
-tbd
 ![IMG_5336](https://github.com/user-attachments/assets/d7ea2f38-bf88-4604-abfc-0bb3990452b6)
 
 ## Results and Analysis
