@@ -37,7 +37,7 @@ The flight computer software is developed using the Arduino system's modified C+
 
 ## Base Station
 
-After the flight computer transmitted its data, I used a Software Defined Radio (SDR) to decode the radio transmissions to keep track of the flight computer's GPS co-ordinates. The data flow is as follows:
+After the flight computer transmitted its data, I used a Software Defined Radio (SDR) to decode the radio transmissions to keep track of the flight computer's GPS co-ordinates. The data flows as follows:
 
 1. Flight computer transmits recorded data via radio broadcast
 2. Directional yagi antenna recieves radio waves
