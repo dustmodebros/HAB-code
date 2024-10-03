@@ -24,7 +24,7 @@ This repository contains the code of a flight computer designed for a High Altit
   - Temperature, Pressure and Altitude Sensor: Adafruit MPL3115A2 I2C Barometric Pressure/Altitude/Temperature Sensor
   - GPS Module: Matek Ublox GPS Module SAM-M10Q
 - **Power Supply**: 8xAA Batteries, The Pi Hut Battery Pack
-- **Transmitter**: Radiometrix NTX2B-434MHz LoRa Radio Module
+- **Transmitter**: Radiometrix TX2B-434MHz LoRa Radio Module
 - **Onboard Storage**: Switch Electronics Micro SD Card Mini TF Reader Module  
 
 ## Software Overview
