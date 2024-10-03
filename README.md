@@ -46,7 +46,8 @@ After the flight computer transmitted its data, I used a Software Defined Radio 
 5. Fldigi[[2]](#2) is used to decode the RTTY signal from the soundcard
 6. Fldigi outputs the decoded characters to the screen
 
-<a id="1">[1]</a>  Amateur UHF radio transceiver. Recommended by HAB experts, as it is (relatively) cheap compared to other transcievers.\n
+<a id="1">[1]</a>  Amateur UHF radio transceiver. Recommended by HAB experts, as it is (relatively) cheap compared to other transcievers.
+
 <a id="2">[2]</a> [Fldigi](http://www.w1hkj.com/index.html) is a piece of software that allows the user to use their computer's soundcard as a two-way data modem. It is able to interpret various 
 
 ## Images
