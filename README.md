@@ -37,7 +37,7 @@ The flight computer software is developed using the Arduino system's modified C+
 
 ## Base Station
 
-After the flight computer transmitted its data, I used a Software Defined Radio (SDR) to decode the radio transmissions to keep track of the flight computer's GPS co-ordinates. The data flows as follows:
+After the flight computer transmitted its data, I used a Software Defined Radio (SDR) to decode the radio transmissions to keep track of the flight computer's GPS co-ordinates. The data pipeline is as follows:
 
 1. Flight computer transmits recorded data via radio broadcast
 2. Directional yagi antenna recieves radio waves
@@ -52,7 +52,7 @@ After the flight computer transmitted its data, I used a Software Defined Radio 
 
 ## Images
 
-![IMG_5336](https://github.com/user-attachments/assets/d7ea2f38-bf88-4604-abfc-0bb3990452b6)
+![Photo of the HAB flight computer.](https://github.com/user-attachments/assets/d7ea2f38-bf88-4604-abfc-0bb3990452b6)
 
 ## Results and Analysis
 
