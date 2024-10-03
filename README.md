@@ -48,7 +48,7 @@ After the flight computer transmitted its data, I used a Software Defined Radio 
 
 \*   Amateur UHF radio transceiver. Recommended by HAB experts, as it is (relatively) cheap compared to other transcievers.
 
-**  [Fldigi](http://www.w1hkj.com/index.html) is a piece of software that allows the user to use their computer's soundcard as a two-way data modem. It is able to interpret various 
+**  [Fldigi](http://www.w1hkj.com/index.html) is a piece of software that allows the user to use their computer's soundcard as a two-way data modem. It is able to interpret various transmission      modes and output encoded data as text. 
 
 ## Images
 
