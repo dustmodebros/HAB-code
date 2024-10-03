@@ -59,9 +59,10 @@ tbd
 ## Results and Analysis
 
 During the test flight, the balloon successfully transmitted data up to its maximum altitude. However, we encountered issues with the altimeter only being rated for a third of the height we wanted to send it to. Additionally, I would have liked to send live photos back to the base station in flight, however time constraints prevented me from integrating the onboard GoPro cameras with the data transmission system.
-![Temperature_vs_time 2](https://github.com/user-attachments/assets/48b11b56-198f-4f09-a0da-d1204faeca54)
-![IMG_5316 Medium](https://github.com/user-attachments/assets/feabf078-fc2d-43f2-81a8-ead93fe424a5)
 
+![Temperature_vs_time 2](https://github.com/user-attachments/assets/48b11b56-198f-4f09-a0da-d1204faeca54)
+
+![IMG_5316 Medium](https://github.com/user-attachments/assets/feabf078-fc2d-43f2-81a8-ead93fe424a5)
 
 ## License
 
