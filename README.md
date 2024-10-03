@@ -5,17 +5,17 @@ image goes here
 
 ## Overview
 
-This repository contains the code of a flight computer designed for a High Altitude Balloon (HAB) that successfully reached an altitude of 100,000 feet, and returned. It performed live data transmission, including temperature, pressure, altitude, and position.
+This repository contains the code of a flight computer designed for a High Altitude Balloon (HAB) that successfully reached an altitude of 100,000 feet, and returned to the ground undamaged. It performed live data transmission, including temperature, pressure, altitude, and position.
 
 ## Features
 
-- **Altitude Achievement**: Successfully reached 100,000 feet.
+- **Altitude Achievement**: Successfully reached 100,000 feet and landed safely.
 - **Real-time Data Transmission**: Live streaming of:
   - Temperature
   - Pressure
   - Altitude
   - GPS Position
-- **Robust Design**: Engineered to withstand extreme conditions at high altitudes.
+- **Robust Design**: Engineered to withstand extreme conditions at high altitudes. Mostly through the liberal application of hot glue.
 
 ## Hardware Components
 
@@ -31,25 +31,31 @@ This repository contains the code of a flight computer designed for a High Altit
 
 The flight computer software is developed using the Arduino system's modified C++. It is responsible for:
 
-- Collecting data from sensors
+- Collecting data from sensors (Temperature, pressure, altitude, location etc.)
 - Formatting and transmitting data via RTTY-50
 - Logging data for post-flight analysis
 
 ## Base Station
 
-After the flight computer transmitted its data, I used a Software Defined Radio (SDR) to decode the radio transmissions to keep track of the flight computer's GPS co-ordinates. The data flow was as follows:
+After the flight computer transmitted its data, I used a Software Defined Radio (SDR) to decode the radio transmissions to keep track of the flight computer's GPS co-ordinates. The data flow is as follows:
 
-- Flight computer transmits 
-For recieving the transmitted data, we used a Yagi antenna, and a Yaesu FT 790-r Transciever to decode it
-For decoding the recieved data, we used [Fldigi](http://www.w1hkj.com/index.html). Fldigi is a 
+1. Flight computer transmits recorded data via radio broadcast
+2. Directional yagi antenna recieves radio waves
+3. Radio waves are decoded to an audio signal using a Yaesu FT 790-r Transciever[^1]
+4. Audio signal passed to a laptop's sound card
+5. Fldigi[^2] is used to decode the RTTY signal from the soundcard
+6. Fldigi outputs the decoded characters to the screen
+
+[^1] Amateur UHF radio transceiver. Recommended by HAB experts, as it is (relatively) cheap compared to other transcievers.
+[^2] [Fldigi](http://www.w1hkj.com/index.html) is a piece of software that allows the user to use their computer's soundcard as a two-way data modem. It is able to interpret various 
 
 ## Images
 
 tbd
 
-## Results
+## Results and Analysis
 
-During the test flight, the balloon successfully transmitted data up to its maximum altitude. However, we encountered issues with the altimeter ; Time constraints prevented me from integrating the onboard GoPro cameras with the data transmission system
+During the test flight, the balloon successfully transmitted data up to its maximum altitude. However, we encountered issues with the altimeter only being rated for a third of the height we wanted to send it to. ; Time constraints prevented me from integrating the onboard GoPro cameras with the data transmission system
 
 ## License
 
@@ -57,7 +63,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
-- Special thanks to Jake Murray and Sam Wardell, without whom none of this could have happened.
-- Additional thanks to the members of the 2022 HAB society at the Harrodian School
+- Additional thanks to the members of the 2022 HAB society at the Harrodian School for their invaluable research into parachute deployment and balloon physics, as well as landing site prediction.
+- Thanks to the [UKHAS wiki](https://ukhas.org.uk/doku.php?id=start), for all of its incredibly useful and beginner-friendly guides.
+- Most importantly, thanks to Jake Murray and Sam Wardell, without whom none of this could have happened.
 
 
