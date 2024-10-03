@@ -68,8 +68,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
-- Additional thanks to the members of the 2022 HAB society at the Harrodian School for their invaluable research into parachute deployment and balloon physics, as well as landing site prediction.
 - Thanks to the [UKHAS wiki](https://ukhas.org.uk/doku.php?id=start), for all of its incredibly useful and beginner-friendly guides.
+- Additional thanks to the members of the 2022 HAB society at the Harrodian School for their invaluable research into parachute deployment and balloon physics, as well as landing site prediction.
 - Most importantly, thanks to Jake Murray and Sam Wardell, without whom none of this could have happened.
 
 
