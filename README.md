@@ -1,8 +1,7 @@
 # High Altitude Balloon Flight Computer
 ![License](https://img.shields.io/badge/license-MIT-brightgreen)
 
-![fixed2 Large](https://github.com/user-attachments/assets/e9e3f033-dfe1-4c20-812b-50f2f2c58f4b)
-
+![fixed2 Medium](https://github.com/user-attachments/assets/e6891c12-59c6-4485-ae5b-b37eb12b2812)
 
 ## Overview
 
