@@ -56,7 +56,7 @@ tbd
 
 ## Results and Analysis
 
-During the test flight, the balloon successfully transmitted data up to its maximum altitude. However, we encountered issues with the altimeter only being rated for a third of the height we wanted to send it to. ; Time constraints prevented me from integrating the onboard GoPro cameras with the data transmission system
+During the test flight, the balloon successfully transmitted data up to its maximum altitude. However, we encountered issues with the altimeter only being rated for a third of the height we wanted to send it to. Additionally, I would have liked to send live photos back to the base station in flight, however time constraints prevented me from integrating the onboard GoPro cameras with the data transmission system.
 
 ## License
 
